@@ -4514,6 +4514,11 @@ input:checked + .toggle-bg {
   background-color: rgb(35 56 118 / var(--tw-bg-opacity));
 }
 
+.bg-cyan-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
 .bg-cyan-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(103 232 249 / var(--tw-bg-opacity));
@@ -4526,6 +4531,10 @@ input:checked + .toggle-bg {
 
 .bg-cyan-400\/25 {
   background-color: rgb(34 211 238 / 0.25);
+}
+
+.bg-cyan-400\/30 {
+  background-color: rgb(34 211 238 / 0.3);
 }
 
 .bg-cyan-50 {
@@ -4988,27 +4997,6 @@ input:checked + .toggle-bg {
 .bg-yellow-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(99 49 18 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-500\/30 {
-  background-color: rgb(6 182 212 / 0.3);
-}
-
-.bg-cyan-700\/30 {
-  background-color: rgb(14 116 144 / 0.3);
-}
-
-.bg-cyan-200\/30 {
-  background-color: rgb(165 243 252 / 0.3);
-}
-
-.bg-cyan-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
-}
-
-.bg-cyan-400\/30 {
-  background-color: rgb(34 211 238 / 0.3);
 }
 
 .bg-opacity-0 {
