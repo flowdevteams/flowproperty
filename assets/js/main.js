@@ -1,3 +1,4 @@
+gsap.from("#navbar", { duration: 1.5, ease: "bounce.out", y: '-100%', });
 // dark mode script start -------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
   // Select the required elements
@@ -94,3 +95,93 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("Active link highlighter initialized.");
 });
 // Active link highlighter script end -------------------------------------------
+
+// Animation Happy Client Start --------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    AOS.init();
+
+    function animateCounter(element, endValue) {
+        let startValue = 0;
+        const duration = 2000;
+        const stepTime = 50;
+        const stepValue = Math.ceil(endValue / (duration / stepTime));
+
+        const timer = setInterval(() => {
+            startValue += stepValue;
+            if (startValue >= endValue) {
+                startValue = endValue;
+                clearInterval(timer);
+            }
+            element.textContent = startValue;
+        }, stepTime);
+    }
+
+    const isElementInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    const startCountersOnScroll = () => {
+        document.querySelectorAll(".counter").forEach((el) => {
+            if (isElementInViewport(el) && !el.hasAttribute("data-animated")) {
+                const endValue = parseInt(el.getAttribute("data-end"), 10);
+                if (endValue) {
+                    animateCounter(el, endValue);
+                    el.setAttribute("data-animated", "true");
+                }
+            }
+        });
+    };
+
+    window.addEventListener("scroll", startCountersOnScroll);
+    window.addEventListener("load", startCountersOnScroll);
+});
+// JavaScript to add 'active' class to navbar links
+document.addEventListener("scroll", function () {
+    let sections = document.querySelectorAll("section");
+    let navLinks = document.querySelectorAll(".nav-link");
+
+    let current = "";
+
+    sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+
+        if (
+            pageYOffset >= sectionTop - 60 &&
+            pageYOffset < sectionTop + sectionHeight - 60
+        ) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    navLinks.forEach((link) => {
+        link.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+            link.classList.add("active");
+        }
+    });
+});
+// Animation Happy Client End --------------------------------------------------
+// Smooth Scroll to Target Section on Click Start ----------------------------------
+document.querySelectorAll(".scroll-link").forEach(link => {
+    link.addEventListener("click", function (event) {
+        event.preventDefault();
+        const targetId = this.getAttribute("data-target");
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            setTimeout(() => {
+                targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 10);
+        }
+    });
+});
+// Smooth Scroll to Target Section on Click End -----------------------------------------

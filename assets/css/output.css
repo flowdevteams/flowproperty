@@ -1245,6 +1245,10 @@ input:checked + .toggle-bg {
   inset-inline-end: 0.5rem;
 }
 
+.end-2\.5 {
+  inset-inline-end: 0.625rem;
+}
+
 .end-24 {
   inset-inline-end: 6rem;
 }
@@ -1363,6 +1367,10 @@ input:checked + .toggle-bg {
 
 .top-2 {
   top: 0.5rem;
+}
+
+.top-2\.5 {
+  top: 0.625rem;
 }
 
 .top-20 {
@@ -4980,6 +4988,27 @@ input:checked + .toggle-bg {
 .bg-yellow-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(99 49 18 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-500\/30 {
+  background-color: rgb(6 182 212 / 0.3);
+}
+
+.bg-cyan-700\/30 {
+  background-color: rgb(14 116 144 / 0.3);
+}
+
+.bg-cyan-200\/30 {
+  background-color: rgb(165 243 252 / 0.3);
+}
+
+.bg-cyan-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(165 243 252 / var(--tw-bg-opacity));
+}
+
+.bg-cyan-400\/30 {
+  background-color: rgb(34 211 238 / 0.3);
 }
 
 .bg-opacity-0 {
