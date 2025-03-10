@@ -1421,8 +1421,8 @@
                             <a href="/">
                                 <div class="flex items-center space-x-2 text-2xl font-medium">
                                     <span>
-                                        <img src="../../assets/images/logo/urbanz-removebg-preview.png" alt="AI Logo" width="70"
-                                            height="70" class="w-16" />
+                                        <img src="../../assets/images/logo/urbanz-removebg-preview.png" alt="AI Logo"
+                                            width="70" height="70" class="w-16" />
                                     </span>
                                     <span
                                         class="text-teal-400 font-semibold text-lg cormorant-garamond-medium dark:text-cyan-700">F
@@ -1578,6 +1578,35 @@
     <script>
         AOS.init();
     </script>
+    <!-- Hear From Our Happy Customers Start -->
+    <script>
+        const sliderWrapper = document.getElementById("slider-wrapper");
+        const slides = sliderWrapper.children;
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+
+        let currentIndex = 0;
+
+        function updateSlider() {
+            Array.from(slides).forEach((slide, index) => {
+                slide.style.transform = `translateX(${-currentIndex * (300 + 45)}px)`;
+            });
+        }
+
+        prev.addEventListener("click", () => {
+            currentIndex = Math.max(currentIndex - 1, 0);
+            updateSlider();
+        });
+
+        next.addEventListener("click", () => {
+            currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+            updateSlider();
+        });
+
+
+        updateSlider();
+    </script>
+    <!-- Hear From Our Happy Customers End -->
 </body>
 
 </html>

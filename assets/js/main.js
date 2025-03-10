@@ -185,30 +185,3 @@ document.querySelectorAll(".scroll-link").forEach(link => {
     });
 });
 // Smooth Scroll to Target Section on Click End -----------------------------------------
-// Hear From Our Happy Customers Start ---------------------------------------------------
-const sliderWrapper = document.getElementById("slider-wrapper");
-const slides = sliderWrapper.children;
-const prev = document.getElementById("prev");
-const next = document.getElementById("next");
-
-let currentIndex = 0;
-
-function updateSlider() {
-    Array.from(slides).forEach((slide, index) => {
-        slide.style.transform = `translateX(${-currentIndex * (300 + 45)}px)`;
-    });
-}
-
-prev.addEventListener("click", () => {
-    currentIndex = Math.max(currentIndex - 1, 0);
-    updateSlider();
-});
-
-next.addEventListener("click", () => {
-    currentIndex = Math.min(currentIndex + 1, slides.length - 1);
-    updateSlider();
-});
-
-
-updateSlider();
-// Hear From Our Happy Customers End ---------------------------------------------------
