@@ -57,10 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
           const expanded = button.getAttribute("aria-expanded") === "true";
           button.setAttribute("aria-expanded", !expanded); 
       });
-  } else {
-      console.error("Hamburger menu or navigation menu not found.");
-  }
-
+  } 
   // Function to toggle dropdowns
   window.toggleDropdown = function (dropdownId) {
       const dropdown = document.getElementById(dropdownId);
@@ -98,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Animation Happy Client Start --------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
-    AOS.init();
+   
 
     function animateCounter(element, endValue) {
         let startValue = 0;
@@ -184,4 +181,40 @@ document.querySelectorAll(".scroll-link").forEach(link => {
         }
     });
 });
-// Smooth Scroll to Target Section on Click End -----------------------------------------
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var scrollTopBtn = document.querySelector(".js-scroll-top"),
+        progressPath = document.querySelector(".progress-circle path");
+
+    // Pastikan elemen ada sebelum melanjutkan
+    if (!scrollTopBtn || !progressPath) return;
+
+    var pathLength = progressPath.getTotalLength();
+
+    // Set stroke dash untuk efek progres
+    progressPath.style.strokeDasharray = `${pathLength} ${pathLength}`;
+    progressPath.style.strokeDashoffset = pathLength;
+
+    function updateScrollProgress() {
+        var scrollTop = window.scrollY || document.documentElement.scrollTop,
+            scrollHeight = document.documentElement.scrollHeight - window.innerHeight,
+            progress = pathLength - (scrollTop * pathLength / scrollHeight);
+
+        progressPath.style.strokeDashoffset = progress;
+
+        // Tampilkan tombol hanya jika scroll lebih dari 100px
+        scrollTopBtn.classList.toggle("is-active", scrollTop > 100);
+    }
+
+    // Event listener saat scroll
+    window.addEventListener("scroll", updateScrollProgress);
+
+    // Scroll ke atas saat tombol diklik
+    scrollTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Jalankan pertama kali untuk inisialisasi
+    updateScrollProgress();
+});
