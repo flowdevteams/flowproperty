@@ -368,12 +368,12 @@
     </header>
     <!--end header-->
     <!-- SECTION INTRODUCING START -->
-    <section>
-        <div class="relative h-screen text-white overflow-hidden bg-fixed"
+    <section class="">
+        <div class="relative h-screen text-white overflow-hidden bg-fixed "
             style="background-image: url('https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); background-size: cover; background-position: center;">
             <div class="absolute inset-0 bg-black opacity-50"></div>
 
-            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
+            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center max-w-screen-xl mx-auto">
                 <h1 class="lg:text-7xl text-6xl font-bold cormorant-garamond-medium text-cyan-500"
                     style="letter-spacing: 0.3em;">
                     Green Living
@@ -387,10 +387,10 @@
     <!-- SECTION INTRODUCING END -->
 
     <!-- SECTION MAIN START -->
-    <section class="container mx-auto mt-[10%]">
-        <div class=" mx-auto max-w-screen-xl sm:py-4">
+    <section class="my-[5%]">
+        <div class="container mx-auto max-w-screen-xl p-8 sm:py-4">
             <di data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
-                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full">
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 h-full ">
                 <div
                     class="col-span-2 sm:col-span-1 md:col-span-2 bg-gray-50 dark:bg-slate-900 h-auto md:h-full flex flex-col">
                     <a href=""
@@ -441,15 +441,15 @@
     <!-- SECTION MAIN END -->
 
     <!-- Section video player Start-->
-    <section class="my-[10%]">
-        <div class="container mx-auto">
+    <section class=" my-[5%]">
+        <div class="max-w-screen-xl container mx-auto p-8">
             <div class="flex justify-center overflow-hidden">
-                <div class="w-full">
+                <div class="w-full my-[2%]">
                     <!-- Modal video component -->
                     <div x-data="{ modalOpen: false }">
                         <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-20">
                             <div data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out-back"
-                                data-aos-delay="20" class="w-full px-5">
+                                data-aos-delay="20" class="w-full ">
                                 <h2
                                     class=" text-2xl md:text-4xl text-cyan-600 cormorant-garamond-medium text-left dark:text-cyan-300">
                                     <i class="ri-reserved-fill"></i> Luxurious living with modern design and
@@ -469,7 +469,7 @@
                                 <button
                                     class="relative flex justify-center items-center focus:outline-none focus-visible:ring focus-visible:ring-indigo-300 rounded-3xl group"
                                     @click="modalOpen = true" aria-controls="modal" aria-label="Watch the video">
-                                    <img class="rounded-3xl shadow-2xl transition ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-teal-300 duration-300"
+                                    <img class="rounded-3xl shadow-lg transition ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-teal-300 duration-300"
                                         src="https://images.pexels.com/photos/261388/pexels-photo-261388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                         width="522" height="232" alt="Modal video thumbnail" />
                                     <!-- Play icon -->
@@ -523,8 +523,8 @@
     <!-- Section video player End -->
 
     <!-- Facilities Start -->
-    <section class="my-[10%]">
-        <div class=" mx-auto max-w-screen-xl">
+    <section class="my-[4%]">
+        <div class=" mx-auto max-w-screen-xl p-8">
             <div class="wrapper">
                 <div class="cols">
                     <!-- Facilities 1 -->
@@ -775,9 +775,9 @@
     <!-- Facilities End -->
 
     <!-- SLIDER ROOM INTERIOR START -->
-    <section class="my-[10%]">
+    <section class="my-[5%]">
         <div>
-            <div class="container mx-auto">
+            <div class="container max-w-screen-xl mx-auto p-8">
                 <div class="lg:flex justify-between items-center lg:flex-row-reverse">
                     <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
                         data-aos-duration="1500" class="lg:w-5/12 lg:p-0 p-7 lg:mb-0 mb-4 lg:text-left">
@@ -898,9 +898,9 @@
     <!-- TEXT ANIMATION MARQUEE END -->
 
     <!-- Section best property prices Start -->
-    <section class="my-[10%]">
+    <section class="my-[5%]">
         <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
-            class="container mx-auto max-w-screen-xl p-5">
+            class="container mx-auto max-w-screen-xl p-8">
             <div class="block rounded-lg shadow-sm bg-gray-300 dark:bg-cyan-600">
                 <img alt=""
                     src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -977,8 +977,8 @@
     <!-- Section best property prices End -->
 
     <!-- Another View Start -->
-    <section class="my-[10%]">
-        <div class=" mx-auto max-w-screen-xl p-5">
+    <section class="my-[5%]">
+        <div class=" mx-auto max-w-screen-xl p-8">
             <h1 data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
                 class="text-center text-cyan-400 text-5xl p-5 cormorant-garamond-medium font-bold">Another View</h1>
             <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
@@ -1068,8 +1068,8 @@
 
 
     <!-- Visit us section START -->
-    <section class="my-[10%]">
-        <div class="max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-20 lg:px-8">
+    <section class="my-[5%]">
+        <div class="max-w-screen-xl mx-auto container p-8">
             <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
                 class="max-w-2xl lg:max-w-4xl mx-auto text-center">
                 <h2 class="text-3xl font-extrabold text-gray-900 cormorant-garamond-medium dark:text-gray-100"
@@ -1128,8 +1128,8 @@
     <!-- Visit us section END -->
 
     <!-- Visit Our Blog START -->
-    <section id="visitBlog" class="my-[10%]">
-        <div class="container mx-auto max-w-screen-xl p-5">
+    <section id="visitBlog" class="my-[5%]">
+        <div class="container mx-auto max-w-screen-xl p-8">
             <div class="relative pb-16 md:pb-20 lg:pb-28">
                 <div class="container mx-auto px-4">
                     <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
@@ -1218,8 +1218,8 @@
 
 
     <!-- CONTACT START -->
-    <section class="my-[10%]">
-        <div class=" mx-auto max-w-screen-xl p-5">
+    <section class="my-[5%]">
+        <div class="container mx-auto max-w-screen-xl p-8">
             <div class="grid grid-cols-1 gap-8  rounded-lg md:grid-cols-2  text-cyan-600 dark:text-cyan-400">
                 <div class="flex flex-col">
                     <div class="flex justify-between items-center ">
