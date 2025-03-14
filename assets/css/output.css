@@ -5051,6 +5051,22 @@ input:checked + .toggle-bg {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/bg-houseplan-white\.jpg\'\)\] {
+  background-image: url('../../assets/images/bg-houseplan-white.jpg');
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/images\/bg-plan-black\.jpg\'\)\] {
+  background-image: url('../../assets/images/bg-plan-black.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/bg-houseplan-white\.jpg\'\)\] {
+  background-image: url('../assets/images/bg-houseplan-white.jpg');
+}
+
+.bg-\[url\(\'\.\.\/assets\/images\/bg-plan-black\.jpg\'\)\] {
+  background-image: url('../assets/images/bg-plan-black.jpg');
+}
+
 .from-blue-50 {
   --tw-gradient-from: #EBF5FF var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(235 245 255 / 0) var(--tw-gradient-to-position);
