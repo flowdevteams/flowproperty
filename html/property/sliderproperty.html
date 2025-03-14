@@ -654,49 +654,7 @@
 
     </script>
 
-   
-    <!-- Script Dark Mode Start -->
-    <script>
 
-        const toggle = document.getElementById('darkModeToggle');
-        const html = document.documentElement;
-        const iconSun = document.getElementById('iconSun');
-        const iconMoon = document.getElementById('iconMoon');
-
-
-        const updateIcon = () => {
-            if (html.classList.contains('dark')) {
-                iconSun.classList.remove('hidden');
-                iconMoon.classList.add('hidden');
-            } else {
-                iconSun.classList.add('hidden');
-                iconMoon.classList.remove('hidden');
-            }
-        };
-
-
-        document.addEventListener('DOMContentLoaded', updateIcon);
-
-
-        toggle.addEventListener('click', () => {
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            }
-            updateIcon();
-        });
-    </script>
-    <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
-    <!-- Script Dark Mode End -->
 </body>
 
 </html>
