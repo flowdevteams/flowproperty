@@ -1,76 +1,70 @@
-gsap.from("#navbar", { duration: 1.5, ease: "bounce.out", y: '-100%', });
-// dark mode script start -------------------------------------------
+
+
+// DARK MODE START -------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the required elements
   const toggle = document.getElementById('darkModeToggle');
   const html = document.documentElement;
   const iconSun = document.getElementById('iconSun');
   const iconMoon = document.getElementById('iconMoon');
 
-  // Check the stored theme in localStorage and apply it
+  // Apply stored theme
   if (localStorage.getItem('theme') === 'dark') {
-      html.classList.add('dark'); 
+    html.classList.add('dark');
   } else {
-      html.classList.remove('dark'); 
+    html.classList.remove('dark');
   }
 
-  // Function to update the toggle icon based on the current theme
   const updateIcon = () => {
-      if (html.classList.contains('dark')) {
-          iconSun.classList.remove('hidden'); 
-          iconMoon.classList.add('hidden');   
-      } else {
-          iconSun.classList.add('hidden');    
-          iconMoon.classList.remove('hidden');
-      }
+    if (!iconSun || !iconMoon) return;
+    if (html.classList.contains('dark')) {
+      iconSun.classList.remove('hidden');
+      iconMoon.classList.add('hidden');
+    } else {
+      iconSun.classList.add('hidden');
+      iconMoon.classList.remove('hidden');
+    }
   };
 
-  // Run the icon update function on page load
   updateIcon();
 
-  // Event listener for dark mode toggle
-  toggle.addEventListener('click', () => {
-      if (html.classList.contains('dark')) {
-          html.classList.remove('dark'); 
-          localStorage.setItem('theme', 'light'); 
-      } else {
-          html.classList.add('dark');
-          localStorage.setItem('theme', 'dark'); 
-      }
-      updateIcon(); 
-  });
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      html.classList.toggle('dark');
+      localStorage.setItem('theme', html.classList.contains('dark') ? 'dark' : 'light');
+      updateIcon();
+    });
+  }
 
   console.log("Dark mode script initialized successfully.");
 });
-// dark mode script end -------------------------------------------
+// DARK MODE END -------------------------------------------
 
 
-//  mobile menu script start -------------------------------------------
+// MOBILE MENU START -------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
-  // Select the hamburger button and the menu
   const button = document.getElementById("hamburger");
   const menu = document.getElementById("nav-menu");
 
   if (button && menu) {
-      button.addEventListener("click", function () {
-          menu.classList.toggle("hidden"); 
-          const expanded = button.getAttribute("aria-expanded") === "true";
-          button.setAttribute("aria-expanded", !expanded); 
-      });
-  } 
-  // Function to toggle dropdowns
+    button.addEventListener("click", function () {
+      menu.classList.toggle("hidden");
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", !expanded);
+    });
+  }
+
   window.toggleDropdown = function (dropdownId) {
-      const dropdown = document.getElementById(dropdownId);
-      if (dropdown) {
-          dropdown.classList.toggle("hidden"); 
-      } else {
-          console.error(`Dropdown with ID "${dropdownId}" not found.`);
-      }
+    const dropdown = document.getElementById(dropdownId);
+    if (dropdown) {
+      dropdown.classList.toggle("hidden");
+    } else {
+      console.error(`Dropdown with ID "${dropdownId}" not found.`);
+    }
   };
 
   console.log("Mobile menu script initialized successfully.");
 });
-//  mobile menu script end -------------------------------------------
+// MOBILE MENU END -------------------------------------------
 
 // Active link highlighter script start -------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
@@ -78,16 +72,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll("nav a");
 
   // Get the current page URL
-  const currentUrl = window.location.href;
+  const currentPath = window.location.pathname;
 
   links.forEach((link) => {
-      // Check if the link's href matches the current URL
-      if (currentUrl.includes(link.href)) {
+      const linkPath = link.getAttribute('href');
+  
+      if (linkPath && currentPath.endsWith(linkPath.replace(/^\.\.?\//, ''))) {
           link.classList.add("text-teal-600", "after:scale-x-100");
       } else {
           link.classList.remove("text-teal-600", "after:scale-x-100");
       }
   });
+  
 
   console.log("Active link highlighter initialized.");
 });

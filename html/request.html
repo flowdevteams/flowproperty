@@ -372,6 +372,7 @@
         </div>
 
         <!-- Form di perbatasan -->
+        
         <div
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10/12 max-w-4xl bg-gray-100 shadow-lg rounded-lg p-8 z-10 mt-40">
             <h2 data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
@@ -410,8 +411,8 @@
         <!-- Background bagian bawah -->
         <div class="absolute inset-0 bg-gray-100 h-1/2 top-1/2 mt-40 dark:bg-gray-900"></div>
     </div>
-    <section class="mt-[10%]">
-        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+    <section class="my-[5%] ">
+        <div class="max-w-screen-xl container  mx-auto p-8">
             <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
                 <!------------------- Green Living ---------------------->
                 <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
@@ -834,9 +835,9 @@
 
     <script src="../assets/js/main.js" defer></script>
     <!-- NAV -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" ></script>
     <!-- Script Flowbite Start -->
-    <script src="../assets/js/flowbite.min.js" defer></script>
+    <script src="../assets/js/flowbite.min.js"></script>
     <!-- Script Flowbite End -->
     <!-- AOS ANIMATION START -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -845,48 +846,6 @@
         AOS.init();
     </script>
 
-    <!-- Script Dark Mode Start -->
-    <script>
-        if (localStorage.getItem('theme') === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
-    </script>
-    <script>
-
-        const toggle = document.getElementById('darkModeToggle');
-        const html = document.documentElement;
-        const iconSun = document.getElementById('iconSun');
-        const iconMoon = document.getElementById('iconMoon');
-
-
-        const updateIcon = () => {
-            if (html.classList.contains('dark')) {
-                iconSun.classList.remove('hidden');
-                iconMoon.classList.add('hidden');
-            } else {
-                iconSun.classList.add('hidden');
-                iconMoon.classList.remove('hidden');
-            }
-        };
-
-
-        document.addEventListener('DOMContentLoaded', updateIcon);
-
-
-        toggle.addEventListener('click', () => {
-            if (html.classList.contains('dark')) {
-                html.classList.remove('dark');
-                localStorage.setItem('theme', 'light');
-            } else {
-                html.classList.add('dark');
-                localStorage.setItem('theme', 'dark');
-            }
-            updateIcon();
-        });
-    </script>
-    <!-- Script Dark Mode End -->
 
 </body>
 
