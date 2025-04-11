@@ -19,6 +19,8 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <!-- Font cormorant-garamond-medium End -->
+    <!--keen slider -->
+   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
 
     <title>About1</title>
 </head>
@@ -221,7 +223,7 @@
                         <!-- Toggle Menu (Mobile) -->
                         <div class="navbar-burger self-center md:hidden lg:hidden xl:hidden">
                             <button id="menu-button"
-                                class="rounded  p-2 text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary"
+                                class="rounded  p-2 text-gray-900 dark:text-white transition hover:text-primary dark:hover:text-secondary"
                                 type="button" data-drawer-target="drawer-navigation"
                                 data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -243,7 +245,7 @@
                                 <!-- Close Button for Mobile Menu -->
                                 <button type="button" data-drawer-hide="drawer-navigation"
                                     aria-controls="drawer-navigation"
-                                    class="text-dark bg-transparent hover:bg-light hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-light">
+                                    class="text-gray-900 bg-transparent hover:bg-light hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-white">
                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 14">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -1039,388 +1041,159 @@
     <!-- Happy Client End -->
 
     <!-- Hear From Our Happy Customers Start -->
-    <section class="my-[10%]">
-        <div class="container mx-auto max-w-screen-xl">
-            <div class="relative flex">
-                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
-                    data-aos-duration="1500" class="min-h-screen bg-gray-800 dark:bg-gray-50 md:w-3/4"></div>
-                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
-                    data-aos-duration="1500"
-                    class="relative min-h-screen bg-cover bg-center bg-[url('https://images.pexels.com/photos/3952028/pexels-photo-3952028.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] md:w-2/5"
-                    loading="lazy">
-                    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-                </div>
-
-                <div class="flex flex-col justify-center w-full min-h-screen md:fixed">
-                    <h1 data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
-                        data-aos-duration="1700"
-                        class="text-3xl font-semibold text-gray-100 capitalize lg:text-4xl dark:text-gray-800 m-3">
-                        Our <span class="text-cyan-500">Customers</span> <br> Speak
-                    </h1>
-
-                    <!-- Slider Wrapper -->
-                    <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
-                        data-aos-duration="1900" class="flex w-full overflow-hidden gap-5 mt-8 lg:mt-16 relative"
-                        id="slider-wrapper">
-                        <!-- Slides -->
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8MHx8&auto=format&fit=crop&w=880&q=80"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Robbert</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 my-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
+    <section class="my-[4%]">
+        <div class="container mx-auto max-w-screen-xl py-10 md:py-2 p-8">
+            <div>
+                <div class="mx-auto max-w-[1340px]">
+                    <div class="max-w-7xl items-end justify-between sm:flex sm:pe-6 lg:pe-8">
+                        <h2 data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50"
+                            class="text-2xl md:text-4xl text-gray-900 dark:text-white font-bold tracking-tight cormorant-garamond-medium ">
+                            Hear from Our Happy Clients <span
+                                class="text-cyan-500">at FlowProperty</span>
+                        </h2>
+                        <div data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                            data-aos-delay="50" class="mt-8 flex gap-4 lg:mt-0">
+                            <button aria-label="Previous slide" id="keen-slider-previous"
+                                class="rounded-full border border-primary dark:border-secondary p-3 text-cyan-500 transition hover:bg-primary dark:hover:bg-secondary hover:text-gray-900 dark:hover:text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-5 rtl:rotate-180">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.75 19.5L8.25 12l7.5-7.5" />
+                                </svg>
+                            </button>
+                            <button aria-label="Next slide" id="keen-slider-next"
+                                class="rounded-full border border-primary dark:border-secondary p-3 text-cyan-500 transition hover:bg-primary dark:hover:bg-secondary hover:text-gray-900 dark:hover:text-white">
+                                <svg class="size-5 rtl:rotate-180" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" />
+                                </svg>
+                            </button>
                         </div>
-
-
-
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Diva</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 mt-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
-                        </div>
-
-
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Orlando</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 mt-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
-                        </div>
-
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Alex</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 mt-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
-                        </div>
-
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/01/2025/02/04/pexels-divinetechygirl-1181519-866613550.jpg"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Nina</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 mt-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
-                        </div>
-
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Kevin</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 mt-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
-                        </div>
-
-                        <div class="w-[300px] p-2 bg-white rounded-md shadow-lg dark:bg-gray-800 shrink-0 m-3 border">
-                            <div class="flex items-center mt-6 -mx-2">
-                                <img class="object-cover mx-2 rounded-full w-14 h-14"
-                                    src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    alt="">
-
-                                <div class="mx-2">
-                                    <h1 class="font-semibold text-gray-800 dark:text-white">Alenna</h1>
-                                    <span class="text-sm text-gray-500 dark:text-gray-400">CTO, Robert
-                                        Consultency</span>
-
-                                    <!-- Rating Stars -->
-                                    <div class="flex items-center mt-2">
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                        <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
-                                            <path
-                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.286 3.948a1 1 0 00.95.69h4.11c.969 0 1.371 1.24.588 1.81l-3.313 2.408a1 1 0 00-.364 1.118l1.286 3.948c.3.921-.755 1.688-1.54 1.118L10 13.011l-3.313 2.408c-.785.57-1.84-.197-1.54-1.118l1.286-3.948a1 1 0 00-.364-1.118L2.756 8.375c-.783-.57-.381-1.81.588-1.81h4.11a1 1 0 00.95-.69l1.286-3.948z">
-                                            </path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <p class="leading-loose text-gray-500 dark:text-gray-400 mt-5">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, accusantium!
-                            </p>
-                        </div>
-
-
                     </div>
-
-                    <!-- Navigation Buttons -->
-                    <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
-                        data-aos-duration="2100" class="items-center mt-12 md:flex ml-5">
-                        <button id="prev" title="left arrow"
-                            class="p-2 text-gray-200 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 hover:bg-gray-100">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-
-                        <button id="next" title="right arrow"
-                            class="p-2 text-gray-200 transition-colors duration-300 border rounded-full rtl:-scale-x-100 dark:text-gray-200 dark:border-gray-700 dark:hover:bg-gray-800 lg:mx-6 hover:bg-gray-100">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
+                    <div class="mt-8 lg:col-span-2 lg:mx-0">
+                        <div id="keen-slider" class="keen-slider">
+                            <!-- Slide 1 -->
+                            <div class="keen-slider__slide">
+                                <div data-aos="fade-down" data-aos-duration="900" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="max-w-2xl overflow-hidden">
+                                    <img class="object-cover w-full h-64 rounded-lg shadow-lg shadow-cyan-300 dark:shadow-cyan-400"
+                                        src="https://images.pexels.com/photos/439391/pexels-photo-439391.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Luxury Apartment Purchase">
+                                    <div class="p-6">
+                                        <div >
+                                            <span class="text-base md:text-lg font-medium text-cyan-500">Property Purchase</span>
+                                            <a href="#"
+                                                class="block mt-2 text-lg lg:text-2xl font-semibold text-gray-900 transition-colors duration-300 transform dark:text-white hover:text-gray-900 hover:underline"
+                                                tabindex="0" role="link">Smooth Process for Our Dream Apartment</a>
+                                            <p class="mt-2 text-base md:text-lg text-gray-900 dark:text-gray-300 dark:text-muted">
+                                                FlowProperty guided us through every step of buying our first luxury apartment.
+                                                The process was smooth, transparent, and stress-free.
+                                            </p>
+                                        </div>
+                                        <div class="mt-4 flex items-center">
+                                            <img class="object-cover w-10 h-10 rounded-full"
+                                                src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="Client 1">
+                                            <a href="#" class="mx-2 font-semibold text-gray-900 dark:text-white">Michael & Sarah</a>
+                                            <span class="mx-1 text-xs text-gray-900 dark:text-white">February 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="keen-slider__slide">
+                                <div data-aos="fade-down" data-aos-duration="1200" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="max-w-2xl overflow-hidden">
+                                    <img class="object-cover w-full h-64 rounded-lg shadow-lg shadow-cyan-300 dark:shadow-cyan-400"
+                                        src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Commercial Leasing">
+                                    <div class="p-6">
+                                        <div >
+                                            <span class="text-base md:text-lg font-medium text-cyan-500">Commercial Leasing</span>
+                                            <a href="#"
+                                                class="block mt-2 text-lg lg:text-2xl font-semibold text-gray-900 transition-colors duration-300 transform dark:text-white hover:text-gray-900 hover:underline"
+                                                tabindex="0" role="link">Perfect Office Space for Our Startup</a>
+                                            <p class="mt-2 text-base md:text-lg text-gray-900 dark:text-gray-300 dark:text-muted">
+                                                With FlowProperty’s help, we found the ideal office space in the city center.
+                                                Flexible lease terms and a great location for our growing team!
+                                            </p>
+                                        </div>
+                                        <div class="mt-4 flex items-center">
+                                            <img class="object-cover w-10 h-10 rounded-full"
+                                                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="Client 2">
+                                            <a href="#" class="mx-2 font-semibold text-gray-900 dark:text-white">TechNova</a>
+                                            <span class="mx-1 text-xs text-gray-900 dark:text-white">January 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="keen-slider__slide">
+                                <div data-aos="fade-down" data-aos-duration="1400" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="max-w-2xl overflow-hidden">
+                                    <img class="object-cover w-full h-64 rounded-lg shadow-lg shadow-cyan-300 dark:shadow-cyan-400"
+                                        src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Property Investment">
+                                    <div class="p-6">
+                                        <div >
+                                            <span class="text-base md:text-lg font-medium text-cyan-500">Real Estate Investment</span>
+                                            <a href="#"
+                                                class="block mt-2 text-lg lg:text-2xl font-semibold text-gray-900 transition-colors duration-300 transform dark:text-white hover:text-gray-900 hover:underline"
+                                                tabindex="0" role="link">Secured Our First Rental Property</a>
+                                            <p class="mt-2 text-base md:text-lg text-gray-900 dark:text-gray-300 dark:text-muted">
+                                                As first-time investors, we were nervous, but FlowProperty provided expert advice and helped us secure a great rental asset.
+                                            </p>
+                                        </div>
+                                        <div class="mt-4 flex items-center">
+                                            <img class="object-cover w-10 h-10 rounded-full"
+                                                src="https://images.pexels.com/photos/3778603/pexels-photo-3778603.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="Client 3">
+                                            <a href="#" class="mx-2 font-semibold text-gray-900 dark:text-white">Arief & Lina</a>
+                                            <span class="mx-1 text-xs text-gray-900 dark:text-white">November 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="keen-slider__slide">
+                                <div data-aos="fade-down" data-aos-duration="1600" data-aos-easing="ease-in-out-back"
+                                    data-aos-delay="50" class="max-w-2xl overflow-hidden">
+                                    <img class="object-cover w-full h-64 rounded-lg shadow-lg shadow-cyan-300 dark:shadow-cyan-400"
+                                        src="https://images.pexels.com/photos/210617/pexels-photo-210617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                        alt="Vacation Property">
+                                    <div class="p-6">
+                                        <div >
+                                            <span class="text-base md:text-lg font-medium text-cyan-500">Vacation Home</span>
+                                            <a href="#"
+                                                class="block mt-2 text-lg lg:text-2xl font-semibold text-gray-900 dark:text-gray-100 transition-colors duration-300 transform dark:text-white-200 hover:text-gray-900 hover:underline"
+                                                tabindex="0" role="link">Beachfront Villa Made Possible</a>
+                                            <p class="mt-2 text-base md:text-lg text-gray-900 dark:text-gray-300 dark:text-muted">
+                                                We found our dream vacation home thanks to FlowProperty. Their dedication and expertise were beyond expectations.
+                                            </p>
+                                        </div>
+                                        <div class="mt-4 flex items-center">
+                                            <img class="object-cover w-10 h-10 rounded-full"
+                                                src="https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                alt="Client 4">
+                                            <a href="#" class="mx-2 font-semibold text-gray-900 dark:text-white">Jason & Rika</a>
+                                            <span class="mx-1 text-xs text-gray-900 dark:text-white">October 2025</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Slides -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Hear From Our Happy Customers End -->
+
     <!-- Hear From Our Happy Customers End -->
 
     <!-- CONTACT START -->
@@ -1605,7 +1378,7 @@
                 </div>
                 <div class="mt-16 border-t border-gray-400/30 pt-8 sm:mt-20 lg:mt-24 dark:border-gray-900">
                     <div class="text-md text-center text-cyan-400 cormorant-garamond-medium dark:text-cyan-700">
-                        Copyright © 2024 . Crafted with by Flowperty teams
+                        Copyright © 2025 . Crafted with by Flowperty teams
                     </div>
                 </div>
             </div>
@@ -1629,7 +1402,47 @@
         AOS.init();
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  
+    <script type="module">
+        // keen slider script
+        import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
+
+        const keenSlider = new KeenSlider(
+            '#keen-slider',
+            {
+                loop: true,
+                slides: {
+                    origin: 'center',
+                    perView: 1.0,
+                    spacing: 16,
+                },
+                breakpoints: {
+
+                    "(min-width: 630px)": {
+                        slides: {
+                            origin: "auto",
+                            perView: 1.75,
+                            spacing: 24,
+                        },
+                    },
+                    "(min-width: 1024px)": {
+                        slides: {
+                            origin: "auto",
+                            perView: 2.5,
+                            spacing: 32,
+                        },
+                    },
+
+                },
+            },
+            []
+        )
+
+        const keenSliderPrevious = document.getElementById('keen-slider-previous')
+        const keenSliderNext = document.getElementById('keen-slider-next')
+
+        keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
+        keenSliderNext.addEventListener('click', () => keenSlider.next())
+    </script>
 </body>
 
 </html>
