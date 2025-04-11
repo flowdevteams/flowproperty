@@ -363,57 +363,55 @@
     <!--end header-->
 
 
-    <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
-        class="relative h-screen">
-        <!-- Background bagian atas -->
-        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center dark:hidden">
-        </div>
-        <div class="absolute inset-0 bg-[url('https://images.pexels.com/photos/219692/pexels-photo-219692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center hidden dark:block">
-        </div>
 
-        <!-- Form di perbatasan -->
-        
-        <div
-            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10/12 max-w-4xl bg-gray-100 shadow-lg rounded-lg p-8 z-10 mt-40">
-            <h2 data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
-                class="md:text-5xl text-4xl text-cyan-500 font-bold text-center mb-6 cormorant-garamond-medium drop-shadow-md">
-                Request A Visit</h2>
-            <form action="https://formspree.io/f/mkgobjqo" method="POST" class="space-y-6">
-                <input type="text" name="name" placeholder="Your Name" required
-                    class="w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
+    <!--request section-->
+    <section class="pt-32">
+        <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
+            class="container mx-auto max-w-screen-xl p-8">
+            <div class=" bg-gray-100 shadow-2xl rounded-lg p-8  ">
+                <h2 data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20" data-aos-duration="1500"
+                    class="md:text-5xl text-4xl text-cyan-500 font-bold text-center mb-6 cormorant-garamond-medium drop-shadow-md">
+                    Request A Visit</h2>
+                    <!--form-->
+                <form action="https://formspree.io/f/mkgobjqo" method="POST" class="space-y-6">
+                    <input type="text" name="name" placeholder="Your Name" required
+                        class="w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
 
-                <input type="email" name="email" placeholder="Your Email" required
-                    class="w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
+                    <input type="email" name="email" placeholder="Your Email" required
+                        class="w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
 
-                <div class="md:flex gap-4">
-                    <input type="date" name="date" required
-                        class="md:w-1/2 w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
+                    <div class="md:flex gap-4">
+                        <input type="date" name="date" required
+                            class="md:w-1/2 w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
 
-                    <input type="time" name="time" required
-                        class="md:w-1/2 w-full p-4 md:mt-0 mt-5 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
-                </div>
+                        <input type="time" name="time" required
+                            class="md:w-1/2 w-full p-4 md:mt-0 mt-5 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500" />
+                    </div>
 
-                <textarea name="message" placeholder="Your Message" required
-                    class="w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
-                    rows="5"></textarea>
+                    <textarea name="message" placeholder="Your Message" required
+                        class="w-full p-4 text-lg border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-500"
+                        rows="5"></textarea>
 
-                <div class="bg-cyan-300 rounded-md">
-                    <button type="submit"
-                        class="w-full p-4 text-lg font-semibold tracking-wide rounded-md hover:bg-cyan-400 text-gray-900 border border-cyan-500 duration-300">
-                        Send Request A Visit
-                    </button>
-                </div>
-            </form>
+                    <div class="bg-cyan-300 rounded-md">
+                        <button type="submit"
+                            class="w-full p-4 text-base md:text-lg font-semibold tracking-wide rounded-md hover:bg-cyan-400 text-gray-900 border border-cyan-500 duration-300">
+                            Send Request A Visit
+                        </button>
+                    </div>
+                </form>
+                <!--end form-->
+            </div>
 
         </div>
+    </section>
+    <!--end request section-->
+  
 
 
-        <!-- Background bagian bawah -->
-        <div class="absolute inset-0 bg-gray-100 h-1/2 top-1/2 mt-40 dark:bg-gray-900"></div>
-    </div>
+<!--green living section-->
     <section class="my-[5%] ">
         <div class="max-w-screen-xl container  mx-auto p-8">
-            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                 <!------------------- Green Living ---------------------->
                 <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
                     data-aos-duration="1500" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
@@ -673,6 +671,7 @@
             </div>
         </div>
     </section>
+    <!--end green living section-->
 
 
     <!--footer-->
@@ -685,8 +684,8 @@
                             <a href="/">
                                 <div class="flex items-center space-x-2 text-2xl font-medium">
                                     <span>
-                                        <img src="../assets/images/logo/urbanz-removebg-preview.png" alt="AI Logo" width="70"
-                                            height="70" class="w-16" />
+                                        <img src="../assets/images/logo/urbanz-removebg-preview.png" alt="AI Logo"
+                                            width="70" height="70" class="w-16" />
                                     </span>
                                     <span
                                         class="text-teal-400 font-semibold text-lg cormorant-garamond-medium dark:text-cyan-700">F
@@ -835,7 +834,7 @@
 
     <script src="../assets/js/main.js" defer></script>
     <!-- NAV -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js" ></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
     <!-- Script Flowbite Start -->
     <script src="../assets/js/flowbite.min.js"></script>
     <!-- Script Flowbite End -->
