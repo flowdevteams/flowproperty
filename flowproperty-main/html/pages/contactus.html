@@ -19,13 +19,13 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <!-- Font cormorant-garamond-medium End -->
-    <title>404 Error Page</title>
+    <title>Contact Us</title>
 </head>
 
 <body class="bg-gray-100 dark:bg-gray-900">
     <!--Start header-->
     <header id="navbar" class="shadow-2xl p-2 fixed top-0 z-40 w-full bg-opacity-70 backdrop-blur">
-        <div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
             <div class="flex h-16 items-center justify-between">
                 <div class="flex-auto">
                     <a class="block text-teal-600 -ml-7" href="#">
@@ -220,7 +220,7 @@
                         <!-- Toggle Menu (Mobile) -->
                         <div class="navbar-burger self-center md:hidden lg:hidden xl:hidden">
                             <button id="menu-button"
-                                class="rounded  p-2 text-dark dark:text-light transition hover:text-primary dark:hover:text-secondary"
+                                class="rounded  p-2 text-gray-900 dark:text-white transition hover:text-primary dark:hover:text-secondary"
                                 type="button" data-drawer-target="drawer-navigation"
                                 data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -242,7 +242,7 @@
                                 <!-- Close Button for Mobile Menu -->
                                 <button type="button" data-drawer-hide="drawer-navigation"
                                     aria-controls="drawer-navigation"
-                                    class="text-dark bg-transparent hover:bg-light hover:text-dark rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-light">
+                                    class="text-gray-900 bg-transparent hover:bg-light hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 inline-flex items-center justify-center dark:hover:bg-dark dark:hover:text-white">
                                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                         fill="none" viewBox="0 0 14 14">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -266,7 +266,7 @@
                                                 <a class="block px-4 py-2 text-black hover:text-cyan-500  "
                                                     href="../home/cozy-dwelling.html">Cozy Dewlling</a>
                                                 <a class="block px-4 py-2 text-black hover:text-cyan-500 "
-                                                    href="../home/family-sanctuary.html">Family Sanctuary</a>
+                                                    href="../homefamily-sanctuary.html">Family Sanctuary</a>
                                                 <a class="block px-4 py-2 text-black hover:text-cyan-500 "
                                                     href="../../index.html">Landing</a>
                                             </div>
@@ -361,40 +361,310 @@
     </header>
     <!--end header-->
 
-    <!-- Background Hero Section Strat -->
-    <section>
-        <div class="relative h-screen text-white overflow-hidden">
-            <div class="absolute inset-0">
-                <img src="https://images.pexels.com/photos/6474300/pexels-photo-6474300.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Background Image" class="object-cover object-center w-full h-full" />
-                <div class="absolute inset-0 bg-black opacity-50"></div>
-            </div>
+    <!-- CONTACT US SECTION START -->
+    <section class="my-[10%]">
+        <div class="container mx-auto max-w-screen-xl p-5">
+            <div class="flex flex-col md:flex-row justify-between items-center h-auto mt-2">
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="1500" class="w-full md:w-1/2 p-5 md:pr-8">
+                    <h2 class="text-xl md:text-7xl font-semibold mb-5 text-cyan-300">Let's talk!</h2>
+                    <form action="https://formspree.io/f/mkgobjqo" method="POST" class="space-y-6">
+                        <input id="name" type="text" name="name" placeholder="Full Name"
+                            class="w-full p-3 rounded bg-gray-50 dark:bg-gray-200 text-gray-900">
+                        <input id="email" type="email" name="email" placeholder="Email"
+                            class="w-full p-3 rounded bg-gray-50 dark:bg-gray-200 text-gray-900">
+                        <textarea id="message" name="message" rows="3" placeholder="Message"
+                            class="w-full p-3 rounded bg-gray-50 dark:bg-gray-200 text-gray-900"></textarea>
 
-            <div class="relative z-10 flex flex-col justify-center items-center h-full text-center">
-                <h1 data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="40" data-aos-duration="1500"
-                    class="text-6xl font-bold cormorant-garamond-medium text-cyan-500" style="letter-spacing: 0.3em;">
-                    <span class="text-8xl">404</span> Error Page
-                </h1>
-                <p data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="40" data-aos-duration="1700"
-                    class="text-lg  mt-2 ">
-                    "We are committed to providing the best experience in property searching."
-                </p>
-                <a data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="40" data-aos-duration="1900"
-                    href="/index.html">
-                    <button
-                        class="py-2 px-3 mt-3 rounded-md shadow-lg bg-cyan-500 hover:bg-cyan-600 duration-300 hover:-translate-y-1 ease-out cormorant-garamond-medium">HOME
-                        PAGE</button>
-                </a>
+                        <div class="bg-cyan-300 rounded-md">
+                            <button type="submit"
+                                class="w-full p-3 text-base tracking-wide rounded-md bg-cyan-300 hover:bg-cyan-400 text-gray-900 border border-cyan-500 duration-300 cormorant-garamond-medium">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="1700" class="w-full md:w-1/2 items-center justify-center">
+                    <div
+                        class="rounded-full overflow-hidden lg:w-[35rem] lg:h-[35rem] md:w-[25rem] md:h-[25rem] w-[18rem] h-[18rem] mx-auto md:mx-0">
+                        <iframe class="lg:w-[35rem] lg:h-[35rem] md:w-[25rem] md:h-[25rem] w-[18rem] h-[18rem]"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.3160407063!2d-74.25986568785095!3d40.697670063849574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQxJzUxLjYiTiA3NMKwMTUnMzUuNyJX!5e0!3m2!1sen!2sus!4v1652901957916"
+                            allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
-    <!-- Background Hero Section End -->
+    <!-- CONTACT US SECTION END -->
+    <!-- Section Property List START -->
+    <section class="mt-24">
+        <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 sm:grid-cols-2 gap-10">
+                <!------------------- Green Living ---------------------->
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="1500" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
+                    <a href="../home/green-living.html">
+                        <div class="relative">
 
+                            <img class="w-full h-[250px] object-cover"
+                                src="https://images.pexels.com/photos/323775/pexels-photo-323775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+
+
+                            <div
+                                class="absolute font-bold bottom-0 left-0 bg-cyan-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-cyan-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                NEW YORK
+                            </div>
+
+
+
+                            <div
+                                class="text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                <span class="font-bold">NEW!</span>
+
+                            </div>
+
+                        </div>
+                        <div class="px-6 py-4">
+
+                            <div
+                                class="font-semibold text-lg inline-block hover:text-cyan-600 transition duration-500 ease-in-out dark:text-cyan-500 dark:hover:text-cyan-600">
+                                Best
+                                View in New York City</div>
+                            <p class="text-gray-500 text-sm dark:text-gray-200">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span class="ml-1 text-lg font-bold text-yellow-400">$</span>
+                            <span class="ml-1 font-bold text-yellow-400">416.100</span>
+                        </div>
+                    </a>
+                </div>
+                <!------------------- Premium Estate ---------------------->
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="1700" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
+                    <a href="../home/premium-estate.html">
+                        <div class="relative">
+
+                            <img class="w-full h-[250px] object-cover"
+                                src="https://images.pexels.com/photos/1488267/pexels-photo-1488267.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+
+
+                            <div
+                                class="absolute font-bold bottom-0 left-0 bg-cyan-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-cyan-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                NEW YORK
+                            </div>
+
+
+
+                            <div
+                                class="text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                <span class="font-bold">NEW!</span>
+
+                            </div>
+
+                        </div>
+                        <div class="px-6 py-4">
+
+                            <div
+                                class="font-semibold text-lg inline-block hover:text-cyan-600 transition duration-500 ease-in-out dark:text-cyan-500 dark:hover:text-cyan-600">
+                                Best
+                                View in New York City</div>
+                            <p class="text-gray-500 text-sm dark:text-gray-200">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span class="ml-1 text-lg font-bold text-yellow-400">$</span>
+                            <span class="ml-1 font-bold text-yellow-400">416.100</span>
+                        </div>
+                    </a>
+                </div>
+                <!------------------- Cozy Dwelling ---------------------->
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="1900" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
+                    <a href="../home/cozy-dwelling.html">
+                        <div class="relative">
+
+                            <img class="w-full h-[250px] object-cover"
+                                src="https://images.pexels.com/photos/28652349/pexels-photo-28652349/free-photo-of-modern-luxury-home-with-poolside-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+
+
+                            <div
+                                class="absolute font-bold bottom-0 left-0 bg-cyan-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-cyan-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                NEW YORK
+                            </div>
+
+
+
+                            <div
+                                class="text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                <span class="font-bold">NEW!</span>
+
+                            </div>
+
+                        </div>
+                        <div class="px-6 py-4">
+
+                            <div
+                                class="font-semibold text-lg inline-block hover:text-cyan-600 transition duration-500 ease-in-out dark:text-cyan-500 dark:hover:text-cyan-600">
+                                Best
+                                View in New York City</div>
+                            <p class="text-gray-500 text-sm dark:text-gray-200">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span class="ml-1 text-lg font-bold text-yellow-400">$</span>
+                            <span class="ml-1 font-bold text-yellow-400">416.100</span>
+                        </div>
+                    </a>
+                </div>
+                <!------------------- Elegant Residene ---------------------->
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="2100" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
+                    <a href="../home/elegant-residence.html">
+                        <div class="relative">
+
+                            <img class="w-full h-[250px] object-cover"
+                                src="https://images.pexels.com/photos/28464682/pexels-photo-28464682.jpeg?cs=srgb&dl=pexels-siddanth-sawant-178759136-28464682.jpg&fm=jpg"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+
+
+                            <div
+                                class="absolute font-bold bottom-0 left-0 bg-cyan-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-cyan-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                NEW YORK
+                            </div>
+
+
+
+                            <div
+                                class="text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                <span class="font-bold">NEW!</span>
+
+                            </div>
+
+                        </div>
+                        <div class="px-6 py-4">
+
+                            <div
+                                class="font-semibold text-lg inline-block hover:text-cyan-600 transition duration-500 ease-in-out dark:text-cyan-500 dark:hover:text-cyan-600">
+                                Best
+                                View in New York City</div>
+                            <p class="text-gray-500 text-sm dark:text-gray-200">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span class="ml-1 text-lg font-bold text-yellow-400">$</span>
+                            <span class="ml-1 font-bold text-yellow-400">416.100</span>
+                        </div>
+                    </a>
+                </div>
+                <!------------------- Family Sanctuary ---------------------->
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="2300" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
+                    <a href="../home/family-sanctuary.html">
+                        <div class="relative">
+
+                            <img class="w-full h-[250px] object-cover"
+                                src="https://images.pexels.com/photos/53610/large-home-residential-house-architecture-53610.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+
+
+                            <div
+                                class="absolute font-bold bottom-0 left-0 bg-cyan-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-cyan-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                NEW YORK
+                            </div>
+
+
+
+                            <div
+                                class="text-sm absolute top-0 right-0 bg-red-600 px-4 text-white rounded-full h-16 w-16 flex flex-col items-center justify-center mt-3 mr-3 hover:bg-white hover:text-red-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                <span class="font-bold">NEW!</span>
+
+                            </div>
+
+                        </div>
+                        <div class="px-6 py-4">
+
+                            <div
+                                class="font-semibold text-lg inline-block hover:text-cyan-600 transition duration-500 ease-in-out dark:text-cyan-500 dark:hover:text-cyan-600">
+                                Best
+                                View in New York City</div>
+                            <p class="text-gray-500 text-sm dark:text-gray-200">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span class="ml-1 text-lg font-bold text-yellow-400">$</span>
+                            <span class="ml-1 font-bold text-yellow-400">416.100</span>
+                        </div>
+                    </a>
+                </div>
+                <!------------------- Comingsoon! ---------------------->
+                <div data-aos="fade-down" data-aos-easing="ease-in-out-back" data-aos-delay="20"
+                    data-aos-duration="2500" class="rounded overflow-hidden shadow-lg dark:shadow-cyan-500">
+                    <a href="../pages/404page.html">
+                        <div class="relative">
+                            <img class="w-full h-[250px] object-cover"
+                                src="https://images.pexels.com/photos/3935333/pexels-photo-3935333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                alt="Sunset in the mountains">
+                            <div
+                                class="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25">
+                            </div>
+                            <div
+                                class="absolute font-bold bottom-0 left-0 bg-cyan-600 px-4 py-2 text-white text-sm hover:bg-white hover:text-cyan-600 transition duration-500 ease-in-out cormorant-garamond-medium">
+                                BALENCIAGA
+                            </div>
+                            <div
+                                class="text-sm absolute top-0 right-0 px-5 py-1 tracking-wider text-center uppercase whitespace-no-wrap origin-bottom-left transform rotate-45 -translate-y-full translate-x-1/3 bg-cyan-500 text-white hover:bg-white hover:text-cyan-500 cormorant-garamond-medium">
+                                <span class="font-bold">COMINGSOON!</span>
+                            </div>
+                        </div>
+                        <div class="px-6 py-4">
+
+                            <div
+                                class="font-semibold text-lg inline-block hover:text-cyan-600 transition duration-500 ease-in-out dark:text-cyan-500 dark:hover:text-cyan-600">
+                                Best
+                                View in Spanyol</div>
+                            <p class="text-gray-500 text-sm dark:text-gray-200">
+                                The city that never sleeps
+                            </p>
+                        </div>
+                        <div class="px-6 py-4 flex flex-row items-center">
+                            <span class="ml-1 text-lg font-bold text-yellow-400">€</span>
+                            <span class="ml-1 font-bold text-yellow-400">1.998</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Property List END -->
 
 
     <!--footer-->
-    <footer class="py-10 bg-slate-900 dark:bg-gray-300">
+    <footer class="mt-10 py-10 bg-slate-900 dark:bg-gray-300">
         <div class="container mx-auto p-0 md:p-8 xl:px-0">
             <div class="mx-auto max-w-full px-6 pb-2 pt-16">
                 <div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -548,16 +818,19 @@
         </div>
     </footer>
     <!--end footer-->
-      <!--main custom js-->
-      <script src="../../assets/js/main.js" defer></script>
-      <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../../assets/js/main.js" defer></script>
+    <!-- Script Flowbite Start -->
+    <script src="../../assets/js/flowbite.min.js"></script>
+    <!-- Script Flowbite End -->
     <!-- AOS ANIMATION START -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- AOS ANIMATION END -->
     <script>
         AOS.init();
-    </script>
+        </script>
+        <!-- AOS ANIMATION END -->
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   
 </body>
 
 </html>

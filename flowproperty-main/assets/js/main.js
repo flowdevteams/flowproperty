@@ -78,16 +78,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll("nav a");
 
   // Get the current page URL
-  const currentUrl = window.location.href;
+  const currentPath = window.location.pathname;
 
   links.forEach((link) => {
-      // Check if the link's href matches the current URL
-      if (currentUrl.includes(link.href)) {
+      const linkPath = link.getAttribute('href');
+  
+      if (linkPath && currentPath.endsWith(linkPath.replace(/^\.\.?\//, ''))) {
           link.classList.add("text-teal-600", "after:scale-x-100");
       } else {
           link.classList.remove("text-teal-600", "after:scale-x-100");
       }
   });
+  
 
   console.log("Active link highlighter initialized.");
 });
