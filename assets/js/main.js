@@ -1,4 +1,4 @@
-gsap.from("#navbar", { duration: 1.5, ease: "bounce.out", y: '-100%', });
+
 // dark mode script start -------------------------------------------
 document.addEventListener("DOMContentLoaded", function () {
   // Select the required elements
