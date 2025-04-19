@@ -5660,6 +5660,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0px;
 }
 
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
@@ -5763,11 +5768,6 @@ input:checked + .toggle-bg {
 .py-px {
   padding-top: 1px;
   padding-bottom: 1px;
-}
-
-.py-0\.5 {
-  padding-top: 0.125rem;
-  padding-bottom: 0.125rem;
 }
 
 .pb-0 {
