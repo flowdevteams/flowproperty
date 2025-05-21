@@ -7809,6 +7809,11 @@ html.dark .circles li {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:bg-gray-400:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(156 163 175 / var(--tw-bg-opacity, 1));
@@ -7848,11 +7853,6 @@ html.dark .circles li {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
-}
-
 .hover\:fill-cyan-100:hover {
   fill: #cffafe;
 }
@@ -7863,10 +7863,6 @@ html.dark .circles li {
 
 .hover\:fill-cyan-600:hover {
   fill: #0891b2;
-}
-
-.hover\:fill-gray-600:hover {
-  fill: #4B5563;
 }
 
 .hover\:font-bold:hover {
@@ -8263,6 +8259,14 @@ html.dark .circles li {
   fill: #06b6d4;
 }
 
+.dark\:fill-gray-100:is(.dark *) {
+  fill: #F3F4F6;
+}
+
+.dark\:fill-gray-200:is(.dark *) {
+  fill: #E5E7EB;
+}
+
 .dark\:fill-pink-400:is(.dark *) {
   fill: #F17EB8;
 }
@@ -8273,18 +8277,6 @@ html.dark .circles li {
 
 .dark\:fill-slate-900:is(.dark *) {
   fill: #0f172a;
-}
-
-.dark\:fill-gray-500:is(.dark *) {
-  fill: #6B7280;
-}
-
-.dark\:fill-gray-100:is(.dark *) {
-  fill: #F3F4F6;
-}
-
-.dark\:fill-gray-200:is(.dark *) {
-  fill: #E5E7EB;
 }
 
 .dark\:text-blue-400:is(.dark *) {
@@ -8461,12 +8453,12 @@ html.dark .circles li {
   fill: #22d3ee;
 }
 
-.dark\:hover\:fill-gray-800:hover:is(.dark *) {
-  fill: #1F2937;
-}
-
 .dark\:hover\:fill-cyan-500:hover:is(.dark *) {
   fill: #06b6d4;
+}
+
+.dark\:hover\:fill-gray-800:hover:is(.dark *) {
+  fill: #1F2937;
 }
 
 .dark\:hover\:text-blue-500:hover:is(.dark *) {
