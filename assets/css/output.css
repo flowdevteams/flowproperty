@@ -5550,6 +5550,10 @@ input:checked + .toggle-bg {
   padding: 1rem;
 }
 
+.p-40 {
+  padding: 10rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -8271,10 +8275,6 @@ html.dark .circles li {
   fill: #F17EB8;
 }
 
-.dark\:fill-sky-400:is(.dark *) {
-  fill: #38bdf8;
-}
-
 .dark\:fill-slate-900:is(.dark *) {
   fill: #0f172a;
 }
@@ -8362,11 +8362,6 @@ html.dark .circles li {
 .dark\:text-pink-400:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(241 126 184 / var(--tw-text-opacity, 1));
-}
-
-.dark\:text-sky-400:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(56 189 248 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-white:is(.dark *) {
